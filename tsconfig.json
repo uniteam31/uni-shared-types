@@ -19,9 +19,7 @@
 	},
 	"include": ["src/**/*"],
 	"exclude": [
-		".storybook/main.ts",
 		"node_modules",
-		"**/*.stories.tsx",
 		"rollup.config.mjs"
 	]
 }
