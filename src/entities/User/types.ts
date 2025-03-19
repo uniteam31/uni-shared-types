@@ -1,7 +1,7 @@
 import type { TMeta } from '../../shared/api';
 
 export type TPublicUser = {
-	_id: TMeta['_id'];
+	id: TMeta['id'];
 	personalSpaceID: string;
 	//
 	firstName: string;
