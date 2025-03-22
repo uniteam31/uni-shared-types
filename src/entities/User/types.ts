@@ -1,9 +1,11 @@
 import type { TMeta } from '../../shared/api';
 
+export type TUserServiceInfo = {
+	isInited: boolean;
+};
+
 export type TPublicUser = {
 	id: TMeta['id'];
-	personalSpaceID: string;
-	//
 	firstName: string;
 	lastName?: string;
 	username: string;
@@ -15,4 +17,4 @@ export type TPrivateUser = {
 	educationalEmail?: string;
 };
 
-export interface IUser extends TPublicUser, TPrivateUser {}
+export interface IUser extends TPublicUser, TPrivateUser, TUserServiceInfo {}
