@@ -1,10 +1,11 @@
 import type { TMeta } from '../../shared/api';
-import type { IUser } from '../User';
+import type { IUser, TPublicUser } from '../User';
 
 export interface ISpace extends TMeta {
 	ownerID: IUser['id'];
 	name: string;
+	description?: string;
 	//
-	membersIDs: IUser['id'][];
-	editorsIDs: IUser['id'][];
+	members: TPublicUser[];
+	editors: TPublicUser[];
 }
